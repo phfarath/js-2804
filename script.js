@@ -13,3 +13,25 @@ let users= usuarios.length;
 for(let i=0; i<users; i++){
     msg.innerHTML += `<p>${usuarios[i].nome} ${usuarios[i].idade}</p>`
 }
+
+// criando slideshow 
+// criando array de imagens 
+var imagens=[
+    'image/b534bfb7-2fb4-4474-8b5d-e91fb8368fdf.jpg',
+    'image/3.webp',
+    'image/mountains-190055_1280.jpg',
+];
+
+// declarando as variaveis 
+let Index =0; //indica posicao 
+let time=2000; // indica tempo das imagens 
+
+// criando funcao 
+function slideshow(){
+    // pega o id e o caminho da imagens 
+    document.getElementById('image').src=imagens[Index];
+    Index++; // incrementa 
+    if(Index == imagens.length){Index=0}
+    setTimeout("slideshow()", time)
+}
+slideshow();

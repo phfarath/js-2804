@@ -2,7 +2,16 @@ body{
     background-image: linear-gradient(to right, rgb(224, 72, 148), rgb(236, 234, 75), red);
 }
 
-
+p{
+    color: blue;
+    font-size: 25px;
+    text-align: center;
+}
+#image{
+    width: 600px;
+    height: 600px;
+    margin-left: 30%;
+}
 
 
 /* Offensive_Security_aula8.pdf  */
