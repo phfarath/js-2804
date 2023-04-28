@@ -3,8 +3,13 @@ let msg = document.getElementById('msg')
 
 // criar obj com array 
 const usuarios =[
-    {nome:"PEDRO", idade:18},
-    {nome:"CLARA", idade:19},
-    {nome:"JDHKJADHK", idade:20},
-
+    {nome:"PEACH", idade:18},
+    {nome:"BOWSER", idade:19},
+    {nome:"MARIO", idade:20},
 ];
+
+// criando uma instancia (aparecer nomes)
+let users= usuarios.length;
+for(let i=0; i<users; i++){
+    msg.innerHTML += `<p>${usuarios[i].nome} ${usuarios[i].idade}</p>`
+}
